@@ -5,26 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastre-se</title>
+</head>
 
     <style>
-    .cabecalho{
-        background-color: rgb(84, 49, 167);
-        border: 1px rgb(84, 49, 167);
-        height: 100px;
-        width: auto;
-        padding: 0%;
-        display: flex;
-        justify-content: center;
-    }
+        .cabecalho{
+            background-color: rgb(84, 49, 167);
+            border: 1px rgb(84, 49, 167);
+            height: 100px;
+            width: auto;
+            padding: 0%;
+            display: flex;
+            justify-content: center;
+        }
 
-    .cadastro{
-        display: flex;
-        justify-content: center;
-        font-family: 'Tahoma';
-    }
-</style>
+        .cadastro{
+            display: flex;
+            justify-content: center;
+            font-family: 'Tahoma';
+        }
+    </style>
 
-</head>
 <body>
     <div class="cabecalho">
         <img src="Imagens/iconecloudebook.png">
@@ -38,36 +38,41 @@
         <p>Nome</p>
     </div>
     <div class="cadastro">
-        <input type="text">
+        <input type="text" id="nomeCad">
     </div>
     <div class="cadastro">
         <p>Sobrenome</p>
     </div>
     <div class="cadastro">
-        <input type="text">
+        <input type="text" id="sobrenomeCad">
     </div>
     <div class="cadastro">
         <p>Email</p>
     </div>
     <div class="cadastro">
-        <input type="text">
+        <input type="text" id="emailCad">
     </div>
     <div class="cadastro">
         <p>Senha</p>
     </div>
     <div class="cadastro">
-        <input type="text">
+        <input type="password" id="senhaCad">
     </div>
     <div class="cadastro">
         <p>Repita sua senha</p>
     </div>
     <div class="cadastro">
-        <input type="text">
+        <input type="password" id="senhaCad2">
     </div>
     <br>
     <div class="cadastro">
-        <input type="button" value="Cadastrar">
+        <input type="button" value="Cadastrar" onclick="Cadastro()">
     </div>
+
+    <script src="cadastro.js">
+
+
+    </script>
 
 </body>
 </html>

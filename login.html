@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bem-vindo</title>
 </head>
+
     <style>
         .cabecalho{
             background-color: rgb(84, 49, 167);
@@ -44,17 +45,17 @@
         <p>Email</p>
     </div>
     <div class="login">
-        <input type="email">
+        <input type="email" id="emailLogin">
     </div>
     <div class="login">
         <p>Senha</p>
     </div>
     <div class="login">
-        <input type="password">
+        <input type="password" id="senhaLogin">
     </div>
     <br>
     <div class="login">
-        <input type="button" value="Entrar">
+        <input type="button" value="Entrar" onclick="Login()">
     </div>
     <br>
     <div class="loginExcecao">
@@ -63,6 +64,8 @@
     <div class="loginExcecao">
         <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8-QzL3Gs53s5QZJlD3UFjvWtoUxTkvIt-Iw&usqp=CAU" style="color: rgb(70, 70, 70);">Não tem conta? Cadastre-se.</a>
     </div>
+
+    <script src="login.js"></script>
 
 </body>
 </html>
