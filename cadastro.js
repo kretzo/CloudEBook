@@ -7,24 +7,30 @@ function Cadastro(){
     senha = document.getElementById('senhaCad').value;
     senhaVerif = document.getElementById('senhaCad2').value;
 
-    if(Usuarios.includes(email)){
-        alert('Email já cadastrado!');
+
+    if(nome == "" || sobrenome == "" || email == "" || senha == "" || senhaVerif == ""){
+        alert('Preencha todos os campos!');
     }
-
     else{
-        if(senhaVerif != senha){
-            alert('As senhas não coincidem!');
+        if(Usuarios.includes(email)){
+            alert('Email já cadastrado!');
         }
+
         else{
+            if(senhaVerif != senha){
+                alert('As senhas não coincidem!');
+            }
+            else{
 
-            Usuarios.push(nome, sobrenome, email, senha);
+                Usuarios.push(nome, sobrenome, email, senha);
 
-            console.log(`Nome: ${nome}`);
-            console.log(`Sobrenome: ${sobrenome}`);
-            console.log(`Email: ${email}`);
-            console.log(`Senha: ${senha}`);
+                console.log(`Nome: ${nome}`);
+                console.log(`Sobrenome: ${sobrenome}`);
+                console.log(`Email: ${email}`);
+                console.log(`Senha: ${senha}`);
 
-            window.location.href = 'login.html';
+                window.location.href = 'login.html';
+            }
         }
     }
 }
