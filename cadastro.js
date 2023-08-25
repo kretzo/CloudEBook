@@ -23,21 +23,8 @@ function Cadastro(){
             console.log(`Sobrenome: ${sobrenome}`);
             console.log(`Email: ${email}`);
             console.log(`Senha: ${senha}`);
+
+            window.location.href = 'login.html';
         }
-    }
-}
-
-function Login(){
-
-    let email = document.getElementById('emailLogin').value;
-    let senha = document.getElementById('senhaLogin').value;
-
-    if(Usuarios.includes(email) && (senha)){
-        alert(`Bem-vindo, ${nome}`);
-        console.log(`Email: ${email}`);
-        console.log(`Senha: ${senha}`);
-    }
-    else{
-        alert('Usuário não encontrado!');
     }
 }
