@@ -10,11 +10,12 @@
     <style>
         .cabecalho{
             background-color: rgb(55, 167, 182);
-            height: 100px;
+            height: 80px;
             width: auto;
             padding: 0%;
             display: flex;
             justify-content: center;
+            font-family: 'arial';
         }
 
         .cadastro{
@@ -29,48 +30,50 @@
     </style>
 
 <body>
-    <div class="cabecalho">
-        <img src="Imagens/iconecloudebook.png">
-        <h1>CloudEBook</h1>
-    </div>
+   <form method="post" action="processoCadastro.php">
+        <div class="cabecalho">
+            <img src="Imagens/iconecloudebook.png">
+            <h1>CloudEBook</h1>
+        </div>
 
-    <div class="cadastro">
-        <h3>Crie uma Conta</h3>
-    </div>
-    <div class="cadastro">
-        <p>Nome</p>
-    </div>
-    <div class="cadastro">
-        <input type="text" id="nomeCad">
-    </div>
-    <div class="cadastro">
-        <p>Sobrenome</p>
-    </div>
-    <div class="cadastro">
-        <input type="text" id="sobrenomeCad">
-    </div>
-    <div class="cadastro">
-        <p>Email</p>
-    </div>
-    <div class="cadastro">
-        <input type="text" id="emailCad">
-    </div>
-    <div class="cadastro">
-        <p>Senha</p>
-    </div>
-    <div class="cadastro">
-        <input type="password" id="senhaCad">
-    </div>
-    <div class="cadastro">
-        <p>Repita sua senha</p>
-    </div>
-    <div class="cadastro">
-        <input type="password" id="senhaCad2">
-    </div>
-    <br>
-    <div class="cadastro">
-        <input type="button" value="Cadastrar" onclick= "Cadastro()">
-    </div>
+        <div class="cadastro">
+            <h3>Crie uma Conta</h3>
+        </div>
+        <div class="cadastro">
+            <p>Nome</p>
+        </div>
+        <div class="cadastro">
+            <input type="text" id="nomeCad" name="nomeCad">
+        </div>
+        <div class="cadastro">
+            <p>Sobrenome</p>
+        </div>
+        <div class="cadastro">
+            <input type="text" id="sobrenomeCad" name="sobrenomeCad">
+        </div>
+        <div class="cadastro">
+            <p>Email</p>
+        </div>
+        <div class="cadastro">
+            <input type="text" id="emailCad" name="emailCad">
+        </div>
+        <div class="cadastro">
+            <p>Senha</p>
+        </div>
+        <div class="cadastro">
+            <input type="password" id="senhaCad" name="senhaCad">
+        </div>
+        <div class="cadastro">
+            <p>Repita sua senha</p>
+        </div>
+        <div class="cadastro">
+            <input type="password" id="senhaCad2" name="senhaCad2">
+        </div>
+        <br>
+        <div class="cadastro">
+            <input type="submit" value="Cadastrar">
+        </div>
+   </form>
 
     <script src="cadastro.js">
 
