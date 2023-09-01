@@ -39,35 +39,37 @@
         <img src="Imagens/iconecloudebook.png">
         <h1>CloudEBook</h1>
     </div>
-    <div class="login">
-        <h1>Seja bem-vindo(a)!</h1>
-    </div>
-    <div class="login">
-        <h3>Login:</h3>
-    </div>
-    <div class="login">
-        <p>Email</p>
-    </div>
-    <div class="login">
-        <input type="email" id="emailLogin">
-    </div>
-    <div class="login">
-        <p>Senha</p>
-    </div>
-    <div class="login">
-        <input type="password" id="senhaLogin">
-    </div>
-    <br>
-    <div class="login">
-        <input type="button" value="Entrar" onclick="Login()">
-    </div>
-    <br>
-    <div class="loginExcecao">
-        <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8-QzL3Gs53s5QZJlD3UFjvWtoUxTkvIt-Iw&usqp=CAU" style="color: rgb(70, 70, 70);">Esqueci minha senha</a>
-    </div>
-    <div class="loginExcecao">
-        <a href="cadastro.html" style="color: rgb(70, 70, 70);">Não tem conta? Cadastre-se.</a>
-    </div>
+    <form method="post" action="processoLogin.php">
+        <div class="login">
+            <h1>Seja bem-vindo(a)!</h1>
+        </div>
+        <div class="login">
+            <h3>Login:</h3>
+        </div>
+        <div class="login">
+            <p>Email</p>
+        </div>
+        <div class="login">
+            <input type="email" id="emailLogin" name="emailLogin">
+        </div>
+        <div class="login">
+            <p>Senha</p>
+        </div>
+        <div class="login">
+            <input type="password" id="senhaLogin" name="senhaLogin">
+        </div>
+        <br>
+        <div class="login">
+            <input type="submit" value="Entrar">
+        </div>
+        <br>
+        <div class="loginExcecao">
+            <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8-QzL3Gs53s5QZJlD3UFjvWtoUxTkvIt-Iw&usqp=CAU" style="color: rgb(70, 70, 70);">Esqueci minha senha</a>
+        </div>
+        <div class="loginExcecao">
+            <a href="cadastro.html" style="color: rgb(70, 70, 70);">Não tem conta? Cadastre-se.</a>
+        </div>
+    </form>
 
     <script src="login.js">
 

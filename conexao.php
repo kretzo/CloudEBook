@@ -6,10 +6,10 @@
 
     $conectar = mysqli_connect($server, $user, $password, $database);
 
-    if($conectar == true){
-        echo "conectado";
-    }
-    else{
-        echo "lmao";
-    }
+    // if($conectar == true){
+    //     echo "conectado";
+    // }
+    // else{
+    //     echo "lmao";
+    // }
 ?>
