@@ -9,70 +9,122 @@
 
     <style>
         .cabecalho{
-            background-color: rgb(55, 167, 182);
-            height: 80px;
-            width: auto;
-            padding: 0%;
-            display: flex;
-            justify-content: center;
-            font-family: 'arial';
-        }
+        background-color: rgb(55, 167, 182);
+        height: 80px;
+        width: auto;
+        display: flex;
+    }
 
-        .cadastro{
-            display: flex;
-            justify-content: center;
-            font-family: 'Tahoma';
-        }
+    .cabecalho .menu{
+        width: 40px;
+        height: 40px;
+        margin: 0px;
+        display: inline-flex;
+        margin: 20px;
+        
+    }
 
-        body{
-            margin: 0%;
-        }
+    .cabecalho .logo{
+        width: 3000px;
+        display: flex;
+        justify-content: center;
+        font-family: 'arial';
+    }
+
+    .cabecalho .usuario{
+        width: 50px;
+        height: 50px;
+        display: inline-flex;
+        justify-content: center;
+        margin: 15px;
+    }
+
+    .cadastro{
+        display: flex;
+        justify-content: center;
+        font-family: 'Tahoma';
+        margin: 5px;
+    }
+
+    .botao{
+        display: flex;
+        justify-content: center;
+        font-family: 'Tahoma';
+        margin: 5px;
+    }
+
+    .boxform{
+        display: flex;
+        justify-content: center;
+        border: 1px solid rgb(180, 180, 180);
+        background-color:rgb(255, 255, 255);;
+        flex-direction: column;
+        height: fit-content;
+        width: 350px;
+        box-sizing: border-box;
+        margin: auto;
+        margin-top: 60px;
+        border-radius: 7px;
+    }
+
+    body{
+        margin: 0%;
+        background-color: rgb(236, 236, 236);
+    }
     </style>
 
 <body>
-   <form method="post" action="processoCadastro.php">
-        <div class="cabecalho">
+    <div class="cabecalho">
+        <div class="menu">
+            <img src="https://cdn-icons-png.flaticon.com/512/56/56763.png" alt="menubar.png">
+        </div>
+        <div class="logo">
             <img src="Imagens/iconecloudebook.png">
             <h1>CloudEBook</h1>
         </div>
+        <div class="usuario">
+           <img src="https://cdn-icons-png.flaticon.com/512/1144/1144760.png" alt="user.png">
+        </div>
+    </div>
 
+    <form class="boxform" method="post" action="processoCadastro.php">
         <div class="cadastro">
             <h3>Crie uma Conta</h3>
         </div>
         <div class="cadastro">
-            <p>Nome</p>
+        <label for="nomeCad">Nome</label>
         </div>
         <div class="cadastro">
             <input type="text" id="nomeCad" name="nomeCad">
         </div>
         <div class="cadastro">
-            <p>Sobrenome</p>
+            <label for="sobrenomeCad">Sobrenome</label>
         </div>
         <div class="cadastro">
             <input type="text" id="sobrenomeCad" name="sobrenomeCad">
         </div>
         <div class="cadastro">
-            <p>Email</p>
+            <label for="emailCad">Email</label>
         </div>
         <div class="cadastro">
             <input type="text" id="emailCad" name="emailCad">
         </div>
         <div class="cadastro">
-            <p>Senha</p>
+            <label for="senhaCad">Senha</label>
         </div>
         <div class="cadastro">
             <input type="password" id="senhaCad" name="senhaCad">
         </div>
         <div class="cadastro">
-            <p>Repita sua senha</p>
+            <label for="senhaCad2">Repita sua senha</label>
         </div>
         <div class="cadastro">
             <input type="password" id="senhaCad2" name="senhaCad2">
         </div>
-        <br>
-        <div class="cadastro">
+        <div class="botao">
             <input type="submit" value="Cadastrar">
         </div>
+        <br>
    </form>
 
     <script src="cadastro.js">

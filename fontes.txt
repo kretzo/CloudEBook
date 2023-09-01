@@ -1,8 +1,0 @@
-Fontes:
-
-31/08:
-
-https://pt.stackoverflow.com/questions/90303/qual-a-fun%C3%A7%C3%A3o-equivalente-a-window-location-href-de-javascript-em-php
-Uso: Redirecionamento de uma página à outra usando php 
-
-https://www.w3schools.com/php/func_mysqli_query.asp

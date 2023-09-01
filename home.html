@@ -12,33 +12,82 @@
         background-color: rgb(55, 167, 182);
         height: 80px;
         width: auto;
-        padding: 0%;
+        display: flex;
+    }
+
+    .cabecalho .menu{
+        width: 40px;
+        height: 40px;
+        margin: 0px;
+        display: inline-flex;
+        margin: 20px;
+        
+    }
+
+    .cabecalho .logo{
+        width: 3000px;
         display: flex;
         justify-content: center;
         font-family: 'arial';
     }
 
-    .oi{
+    .cabecalho .usuario{
+        width: 50px;
+        height: 50px;
+        display: inline-flex;
+        justify-content: center;
+        margin: 15px;
+    }
+
+    .novidades{
         display: flex;
         justify-content: center;
-        margin-top: 10px;
+        border: 1px;
+        box-sizing: content-box;
+        width: 1200px;
+        height: 400px;
+        margin: auto;
+        background-color: rgb(168, 168, 168);
+    }
+
+    .boasvindas{
+        display: flex;
+        justify-content: center;
+        font-family: 'Tahoma';
+        margin: 20px;
     }
 
     body{
-        margin: 0%;
+        margin: 0px;
+        background-color: rgb(236, 236, 236);
     }
 </style>
 
 <body>
     <div class="cabecalho">
-        <img src="Imagens/iconecloudebook.png">
-        <h1>CloudEBook</h1>
+        <div class="menu">
+            <img src="https://cdn-icons-png.flaticon.com/512/56/56763.png" alt="menubar.png">
+        </div>
+        <div class="logo">
+            <img src="Imagens/iconecloudebook.png">
+            <h1>CloudEBook</h1>
+        </div>
+        <div class="usuario">
+           <img src="https://cdn-icons-png.flaticon.com/512/1144/1144760.png" alt="user.png">
+        </div>
     </div>
-    <div class="oi">
-        <h1>Aguarde, página em construção.</h1>
+
+    <div class="boasvindas">
+        <h2>Bem-vindo(a) ao CloudEBook!</h2>
     </div>
-    <div class="oi">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8-QzL3Gs53s5QZJlD3UFjvWtoUxTkvIt-Iw&usqp=CAU" alt="dogue">
+
+    <div class="novidades">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8-QzL3Gs53s5QZJlD3UFjvWtoUxTkvIt-Iw&usqp=CAU
+        " alt="oi" height="400px" width="1200px">
+    </div>
+
+    <div class="livrosHome">
+
     </div>
 </body>
 </html>

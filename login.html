@@ -8,68 +8,117 @@
 </head>
 
     <style>
-          .cabecalho{
-            background-color: rgb(55, 167, 182);
-            height: 80px;
-            width: auto;
-            padding: 0%;
-            display: flex;
-            justify-content: center;
-            font-family: 'arial';
-        }
+        .cabecalho{
+        background-color: rgb(55, 167, 182);
+        height: 80px;
+        width: auto;
+        display: flex;
+    }
 
-        .login{
-            display: flex;
-            justify-content: center;
-            font-family: 'Tahoma';
-        }
+    .cabecalho .menu{
+        width: 40px;
+        height: 40px;
+        margin: 0px;
+        display: inline-flex;
+        margin: 20px;       
+    }
 
-        .loginExcecao{
-            font-size: small;
-            display: flex;
-            justify-content: center;
-        }
+    .cabecalho .logo{
+        width: 3000px;
+        display: flex;
+        justify-content: center;
+        font-family: 'arial';
+    }
 
-        body{
-            margin: 0%;
-        }
+    .cabecalho .usuario{
+        width: 50px;
+        height: 50px;
+        display: inline-flex;
+        justify-content: center;
+        margin: 15px;
+    }
+
+    .login{
+        display: flex;
+        justify-content: center;
+        font-family: 'Tahoma';
+        margin: 3px;
+    }
+
+    .loginExcecao{
+        font-size: small;
+        display: flex;
+        justify-content: center;
+    }
+
+    .boxform{
+        display: flex;
+        justify-content: center;
+        border: 1px solid rgb(180, 180, 180);
+        background-color:rgb(255, 255, 255);;
+        flex-direction: column;
+        height: fit-content;
+        width: 350px;
+        box-sizing: border-box;
+        margin: auto;
+        margin-top: 60px;
+        border-radius: 7px;
+    }
+
+    body{
+        margin: 0%;
+        background-color: rgb(236, 236, 236);
+    }
     </style>
 <body>
     <div class="cabecalho">
-        <img src="Imagens/iconecloudebook.png">
-        <h1>CloudEBook</h1>
+        <div class="menu">
+            <img src="https://cdn-icons-png.flaticon.com/512/56/56763.png" alt="menubar.png">
+        </div>
+        <div class="logo">
+            <img src="Imagens/iconecloudebook.png">
+            <h1>CloudEBook</h1>
+        </div>
+        <div class="usuario">
+           <img src="https://cdn-icons-png.flaticon.com/512/1144/1144760.png" alt="user.png">
+        </div>
     </div>
-    <form method="post" action="processoLogin.php">
-        <div class="login">
-            <h1>Seja bem-vindo(a)!</h1>
-        </div>
-        <div class="login">
-            <h3>Login:</h3>
-        </div>
-        <div class="login">
-            <p>Email</p>
-        </div>
-        <div class="login">
-            <input type="email" id="emailLogin" name="emailLogin">
-        </div>
-        <div class="login">
-            <p>Senha</p>
-        </div>
-        <div class="login">
-            <input type="password" id="senhaLogin" name="senhaLogin">
-        </div>
-        <br>
-        <div class="login">
-            <input type="submit" value="Entrar">
-        </div>
-        <br>
-        <div class="loginExcecao">
-            <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8-QzL3Gs53s5QZJlD3UFjvWtoUxTkvIt-Iw&usqp=CAU" style="color: rgb(70, 70, 70);">Esqueci minha senha</a>
-        </div>
-        <div class="loginExcecao">
-            <a href="cadastro.html" style="color: rgb(70, 70, 70);">Não tem conta? Cadastre-se.</a>
-        </div>
-    </form>
+
+    <div class="login">
+        <h2>Seja bem-vindo(a)!</h2>
+    </div>
+
+    <div class="boxform">
+        <form method="post" action="processoLogin.php"></form>
+            <div class="login">
+                <h3>Login:</h3>
+            </div>
+            <div class="login">
+                <p>Email</p>
+            </div>
+            <div class="login">
+                <input type="email" id="emailLogin" name="emailLogin">
+            </div>
+            <div class="login">
+                <p>Senha</p>
+            </div>
+            <div class="login">
+                <input type="password" id="senhaLogin" name="senhaLogin">
+            </div>
+            <br>
+            <div class="login">
+                <input type="submit" value="Entrar">
+            </div>
+            <br>
+            <div class="loginExcecao">
+                <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8-QzL3Gs53s5QZJlD3UFjvWtoUxTkvIt-Iw&usqp=CAU" style="color: rgb(70, 70, 70);">Esqueci minha senha</a>
+            </div>
+            <div class="loginExcecao">
+                <a href="cadastro.html" style="color: rgb(70, 70, 70);">Não tem conta? Cadastre-se.</a>
+            </div>
+            <br>
+        </form>
+    </div>
 
     <script src="login.js">
 
