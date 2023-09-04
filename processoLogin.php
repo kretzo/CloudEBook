@@ -5,7 +5,7 @@
     if($email != "" && $senha != ""){
         include('conexao.php');
 
-        $verific = "SELECT * FROM tb_usuario WHERE Email = '$email'";
+        $verific = "SELECT * FROM tb_usuarios WHERE Email = '$email'";
         $loginVerif = mysqli_query($conectar, $verific);
 
         if($email == $loginVerif){
@@ -13,7 +13,8 @@
            exit;
         }
         else{
-            echo "Nok";
+            header("Location: home.html");
+           exit;
         }
     }    
 ?>

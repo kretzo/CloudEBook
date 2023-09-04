@@ -8,7 +8,7 @@
 </head>
 
     <style>
-        .cabecalho{
+    .cabecalho{
         background-color: rgb(55, 167, 182);
         height: 80px;
         width: auto;
@@ -38,11 +38,55 @@
         margin: 15px;
     }
 
-    .login{
+    .boasvindas{
         display: flex;
         justify-content: center;
+        align-items: center;
         font-family: 'Tahoma';
-        margin: 3px;
+        height: 200px;
+    }
+
+    .boxform{
+        border: 1px solid rgb(180, 180, 180);
+        background-color:rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        width: fit-content;
+        box-sizing: border-box;
+        margin: auto;
+        border-radius: 7px;
+        padding: 10px 60px 10px 60px;
+    }
+
+    .login{
+        font-family: 'Tahoma';
+        margin-bottom: 10px;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    label{
+        font-family: 'Tahoma';
+        display: flex;
+        justify-content:center;
+        margin: 5px;
+    }
+
+    .botao{
+        background-color: rgb(241, 73, 73);
+        color: white;
+        margin: 5px;
+        border: 1px solid rgb(241, 73, 73);
+        cursor: pointer;
+        transition-duration: 0.5s;
+    }
+
+    .botao:hover{
+        background-color: white;
+        color: rgb(241, 73, 73);
+        border: 1px solid rgb(241, 73, 73);
     }
 
     .loginExcecao{
@@ -51,78 +95,127 @@
         justify-content: center;
     }
 
-    .boxform{
+    .rodape{
+        background-color: rgb(80, 80, 80);
+        height: 100px;
+        width: 100%;
+        position: fixed;
+        margin-top: 80px;
+        left: 0;
+        bottom: 0;
+        color: white;
+        display: flex;
+        align-content: center;
+        font-family: 'Tahoma';
+        font-weight: 10;
+    }
+
+    .rodape .iconeFooter{
+        height: 100px;
+        width: 100px;
+        margin: 5px;
         display: flex;
         justify-content: center;
-        border: 1px solid rgb(180, 180, 180);
-        background-color:rgb(255, 255, 255);;
-        flex-direction: column;
-        height: fit-content;
-        width: 350px;
-        box-sizing: border-box;
-        margin: auto;
-        margin-top: 60px;
-        border-radius: 7px;
     }
+
+    .rodape .copyright{
+        height: 100px;
+        width: 70%;
+        display: flex;
+        justify-content: right;
+        align-items:last baseline;
+        color: white;
+        font-family: 'Tahoma';
+        font-size: small;
+    }
+
+    .rodape .listaInfo{
+        height: 100px;
+        width: 800px;
+        margin-right: 0px;
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .sobreBtn{
+        background-color: rgb(80, 80, 80);
+        border: none;
+        color: white;
+        font-family: 'Tahoma';
+        font-size: medium;
+        height: fit-content;
+        width: fit-content;
+        padding: 10px;
+    }
+
+    .sobreBtn:hover{
+        color: rgb(80, 80, 80);
+        background-color: white;
+        cursor: pointer;
+    }
+
+    a:link { text-decoration: none; }
 
     body{
         margin: 0%;
         background-color: rgb(236, 236, 236);
     }
     </style>
+
 <body>
-    <div class="cabecalho">
+    <header class="cabecalho">
         <div class="menu">
-            <img src="https://cdn-icons-png.flaticon.com/512/56/56763.png" alt="menubar.png">
+            <img src="Imagens/menubar.png" alt="menubar.png">
         </div>
         <div class="logo">
-            <img src="Imagens/iconecloudebook.png">
-            <h1>CloudEBook</h1>
+            <img src="Imagens/Logo.png" alt="logo.png">
         </div>
         <div class="usuario">
-           <img src="https://cdn-icons-png.flaticon.com/512/1144/1144760.png" alt="user.png">
+           <img src="Imagens/Usuario.png" alt="Usuario.png">
         </div>
-    </div>
+    </header>
 
-    <div class="login">
+    <div class="boasvindas">
         <h2>Seja bem-vindo(a)!</h2>
     </div>
 
-    <div class="boxform">
-        <form method="post" action="processoLogin.php"></form>
-            <div class="login">
-                <h3>Login:</h3>
-            </div>
-            <div class="login">
-                <p>Email</p>
-            </div>
-            <div class="login">
-                <input type="email" id="emailLogin" name="emailLogin">
-            </div>
-            <div class="login">
-                <p>Senha</p>
-            </div>
-            <div class="login">
-                <input type="password" id="senhaLogin" name="senhaLogin">
-            </div>
-            <br>
-            <div class="login">
-                <input type="submit" value="Entrar">
-            </div>
-            <br>
-            <div class="loginExcecao">
-                <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8-QzL3Gs53s5QZJlD3UFjvWtoUxTkvIt-Iw&usqp=CAU" style="color: rgb(70, 70, 70);">Esqueci minha senha</a>
-            </div>
-            <div class="loginExcecao">
-                <a href="cadastro.html" style="color: rgb(70, 70, 70);">Não tem conta? Cadastre-se.</a>
-            </div>
-            <br>
-        </form>
-    </div>
+    <form class="boxform" method="post" action="processoLogin.php">
+        <div class="login">
+            <h3>Login:</h3>
+        </div>
+        <label for="emailLogin">Email</label>
+        <div class="login">
+            <input type="email" id="emailLogin" name="emailLogin">
+        </div>
+        <label for="senhaLogin">Senha</label>
+        <div class="login">
+            <input type="password" id="senhaLogin" name="senhaLogin">
+        </div>
+        <div class="login">
+            <input type="submit" class="botao" value="Entrar">
+        </div>
+        <div class="loginExcecao">
+            <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8-QzL3Gs53s5QZJlD3UFjvWtoUxTkvIt-Iw&usqp=CAU" style="color: rgb(70, 70, 70);">Esqueci minha senha</a>
+        </div>
+        <div class="loginExcecao">
+            <a href="cadastro.html" style="color: rgb(70, 70, 70);">Não tem conta? Cadastre-se</a>
+        </div>
+    </form>
 
-    <script src="login.js">
-
-    </script>
-
+    <footer class="rodape">
+        <div class="iconeFooter">
+            <img src="Imagens/IconeBranco.png" alt="IconeBranco.png" height="60px">
+        </div>
+        <div class="copyright">
+            <p>CloudEBook — 2023 © Todos os direitos reservados</p>
+        </div>
+        <div class="listaInfo">
+            <a href="sobre.html" class="sobreBtn">Nossa missão</a>
+            <a href="contato.html" class="sobreBtn">Contate-nos</a>
+            <a href="faq.html" class="sobreBtn">FAQ</a>
+        </div>
+    </footer>
 </body>
 </html>
