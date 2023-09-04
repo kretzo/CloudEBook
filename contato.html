@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nossa missão</title>
+    <title>Contate-nos</title>
 </head>
 
 <style>
@@ -38,11 +38,62 @@
         margin: 15px;
     }
 
+    .titulo{
+        height: 120px;
+        width: auto;
+        font-family: 'Tahoma';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .boxform{
+        border: 1px solid rgb(180, 180, 180);
+        background-color:rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        width: fit-content;
+        box-sizing: border-box;
+        margin: auto;
+        border-radius: 7px;
+        padding: 10px 60px 10px 60px;
+    }
+
+    .contato{
+        font-family: 'Tahoma';
+        margin-bottom: 10px;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    label{
+        font-family: 'Tahoma';
+        display: flex;
+        justify-content:center;
+        margin: 5px;
+    }
+
+    .botao{
+        background-color: rgb(241, 73, 73);
+        color: white;
+        margin: 5px;
+        border: 1px solid rgb(241, 73, 73);
+        cursor: pointer;
+        transition-duration: 0.5s;
+    }
+
+    .botao:hover{
+        background-color: white;
+        color: rgb(241, 73, 73);
+        border: 1px solid rgb(241, 73, 73);
+    }
+
     .rodape{
         background-color: rgb(80, 80, 80);
         height: 100px;
         width: 100%;
-        position: fixed;
         margin-top: 80px;
         left: 0;
         bottom: 0;
@@ -51,6 +102,7 @@
         align-content: center;
         font-family: 'Tahoma';
         font-weight: 10;
+        padding-bottom: 15px;
     }
 
     .rodape .iconeFooter{
@@ -113,12 +165,41 @@
             <img src="Imagens/menubar.png" alt="menubar.png">
         </div>
         <div class="logo">
-            <img src="Imagens/Logo.png" alt="logo.png">
+            <a href="home.html"><img src="Imagens/Logo.png" alt="logo.png" height="80px"></a>
         </div>
         <div class="usuario">
            <img src="Imagens/Usuario.png" alt="Usuario.png">
         </div>
     </header>
+
+    <div class="titulo">
+        <h2>Tem alguma dúvida, sugestão ou reclamação? Envie-nos uma mensagem!</h2>
+    </div>
+
+    <form class="boxform">
+        <div class="contato">
+            <h3>Contato</h3>
+        </div>
+        <div class="contato">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome">
+        </div>
+        <div class="contato">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div class="contato">
+            <label for="texto">Mensagem</label>
+            <textarea name="texto" id="texto"></textarea>
+        </div>
+        <div class="contato">
+            <label for="anexos">Anexos (opcional)</label>
+            <input type="file" id="anexos" name="anexos">
+        </div>
+        <div class="contato">
+            <input class="botao" type="submit" value="Enviar">
+        </div>
+    </form>
 
     <footer class="rodape">
         <div class="iconeFooter">

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nossa missão</title>
+    <title>Perguntas frequentes</title>
 </head>
 
 <style>
@@ -38,11 +38,28 @@
         margin: 15px;
     }
 
+    .titulo{
+        height: 120px;
+        width: auto;
+        font-family: 'Tahoma';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .corpo{
+        height:fit-content;
+        width: 800px;
+        margin: auto;
+        font-family: 'Tahoma';
+        display: flex;
+        flex-direction: column;
+    }
+
     .rodape{
         background-color: rgb(80, 80, 80);
         height: 100px;
         width: 100%;
-        position: fixed;
         margin-top: 80px;
         left: 0;
         bottom: 0;
@@ -51,6 +68,7 @@
         align-content: center;
         font-family: 'Tahoma';
         font-weight: 10;
+        padding-bottom: 15px;
     }
 
     .rodape .iconeFooter{
@@ -113,12 +131,33 @@
             <img src="Imagens/menubar.png" alt="menubar.png">
         </div>
         <div class="logo">
-            <img src="Imagens/Logo.png" alt="logo.png">
+            <a href="home.html"><img src="Imagens/Logo.png" alt="logo.png" height="80px"></a>
         </div>
         <div class="usuario">
            <img src="Imagens/Usuario.png" alt="Usuario.png">
         </div>
     </header>
+
+    <div class="titulo">
+        <h2>Perguntas frequentes</h2>
+    </div>
+
+    <div class="corpo">
+        <label for="q1"><strong>Lorem ipsum dolor sit amet?</strong></label>
+        <p id="q1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <br>
+        <label for="q2"><strong>Vitae nunc sed velit dignissim sodales ut eu sem?</strong></label>
+        <p id="q2">Vitae nunc sed velit dignissim sodales ut eu sem. Duis ultricies lacus sed turpis. Morbi blandit cursus risus at. Enim sit amet venenatis urna cursus eget nunc. Facilisis magna etiam tempor orci eu.</p>
+        <br>
+        <label for="q3"><strong>Viverra nam libero justo laoreet sit amet?</strong></label>
+        <p id="q3">Viverra nam libero justo laoreet sit amet. Est ultricies integer quis auctor elit sed vulputate mi sit. </p>
+        <br>
+        <label for="q4"><strong>Odio ut enim blandit volutpat?</strong></label>
+        <p id="q4">Odio ut enim blandit volutpat. Montes nascetur ridiculus mus mauris. Consectetur lorem donec massa sapien faucibus et molestie ac. Libero volutpat sed cras ornare arcu. Risus at ultrices mi tempus imperdiet nulla malesuada pellentesque.</p>
+        <br>
+        <label for="q5"><strong>Ac turpis egestas integer eget aliquet nibh?</strong></label>
+        <p>Ac turpis egestas integer eget aliquet nibh. Elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi. Nullam vehicula ipsum a arcu cursus vitae.</p>
+    </div>
 
     <footer class="rodape">
         <div class="iconeFooter">
