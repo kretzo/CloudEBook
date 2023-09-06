@@ -5,16 +5,23 @@
     if($email != "" && $senha != ""){
         include('conexao.php');
 
-        $verific = "SELECT * FROM tb_usuarios WHERE Email = '$email'";
+        $verific = "SELECT IdUsuario FROM tb_usuario WHERE Email = '$email' AND Senha = '$senha'";
         $loginVerif = mysqli_query($conectar, $verific);
+        // $row = mysqli_fetch_array($loginVerif, MYSQLI_ASSOC);
 
-        if($email == $loginVerif){
+        $count = mysqli_num_rows($loginVerif);
+
+        if($count == 1){
            header("Location: home.html");
            exit;
         }
         else{
-            header("Location: home.html");
-           exit;
+            header("Location: login.html");
+            exit;
         }
-    }    
+    }
+    else{
+        header("Location: login.html");
+        exit;
+    }
 ?>
