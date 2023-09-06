@@ -1,3 +1,3 @@
 06/09:
 
-Foi concluída a função de verificação de login
+Foi concluída a função de verificação de login.

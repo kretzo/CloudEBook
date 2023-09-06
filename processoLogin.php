@@ -16,12 +16,10 @@
            exit;
         }
         else{
-            header("Location: login.html");
-            exit;
+            echo "<script>alert('Email ou senha incorretos!')<\script>"
         }
     }
     else{
-        header("Location: login.html");
-        exit;
+        echo "<script>alert('Preencha todos os dados!')<\script>"
     }
 ?>

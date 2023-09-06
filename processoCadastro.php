@@ -16,14 +16,10 @@
             exit();
         }
         else{
-            header("Location: cadastro.html");
             echo "<script>alert('As senhas não coincidem!')</script>";
-            exit();
         }
     }
     else{
-        header("Location: cadastro.html");  
         echo "<script>alert('Preencha todos os campos!')</script>";
-        exit();
     }
 ?>
