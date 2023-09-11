@@ -16,10 +16,10 @@
            exit;
         }
         else{
-            echo "<script>alert('Email ou senha incorretos!')<\script>"
+            echo "<script>alert('Email ou senha incorretos!')</script>";
         }
     }
     else{
-        echo "<script>alert('Preencha todos os dados!')<\script>"
+        echo "<script>alert('Preencha todos os dados!')</script>";
     }
 ?>
