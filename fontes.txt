@@ -26,3 +26,7 @@ https://blog.hubspot.com/website/remove-underline-from-links-css
 https://dev.to/nehalahmadkhan/how-to-make-footer-stick-to-bottom-of-web-page-3i14
 
 https://www.tutorialspoint.com/php/php_mysql_login.htm
+
+==============================================
+19/09:
+https://sharkcoder.com/blocks/carousel
