@@ -1,25 +1,32 @@
 <?php
-    $email = $_POST['emailLogin'];
-    $senha = $_POST['senhaLogin'];
+    class Login{
 
-    if($email != "" && $senha != ""){
-        include('conexao.php');
+        private $count;
 
-        $verific = "SELECT IdUsuario FROM tb_usuario WHERE Email = '$email' AND Senha = '$senha'";
-        $loginVerif = mysqli_query($conectar, $verific);
-        // $row = mysqli_fetch_array($loginVerif, MYSQLI_ASSOC);
+        public function __construct(){
+            $email = $_POST['emailLogin'];
+            $senha = $_POST['senhaLogin'];
 
-        $count = mysqli_num_rows($loginVerif);
+            if($email != "" && $senha != ""){
+                include('conexao.php');
 
-        if($count == 1){
-           header("Location: home.html");
-           exit;
-        }
-        else{
-            echo "<script>alert('Email ou senha incorretos!')</script>";
-        }
-    }
-    else{
-        echo "<script>alert('Preencha todos os dados!')</script>";
+                $verific = "SELECT IdUsuario FROM tb_usuario WHERE Email = '$email' AND Senha = '$senha'";
+                $loginVerif = mysqli_query($conectar, $verific);
+                
+                $this -> $count = mysqli_num_rows($loginVerif);
+
+                if($count == 1){
+                    header("Location: home.html");
+                    exit;
+                 }
+                 else{
+                     echo "<script>alert('Email ou senha incorretos!')</script>";
+                 }
+            }
+
+            else{
+                echo "<script>alert('Preencha todos os dados!')</script>";
+            }
+         }
     }
 ?>
