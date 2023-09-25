@@ -8,36 +8,42 @@
 </head>
 
     <style>
-        .cabecalho{
+    .cabecalho{
         background-color: rgb(55, 167, 182);
         height: 80px;
-        width: auto;
+        width: 100%;
         display: flex;
         margin-bottom: 50px;
     }
 
     .cabecalho .menu{
-        width: 40px;
-        height: 40px;
-        margin: 0px;
-        display: inline-flex;
-        margin: 20px;
+        width: 15%;
+        height: fit-content;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 1%;
+        display: flex;
         
     }
 
     .cabecalho .logo{
-        width: 3000px;
+        width: 70%;
+        height: fit-content;
+        margin-top: auto;
+        margin-bottom: auto;
         display: flex;
         justify-content: center;
         font-family: 'arial';
     }
 
     .cabecalho .usuario{
-        width: 50px;
-        height: 50px;
-        display: inline-flex;
-        justify-content: center;
-        margin: 15px;
+        width: 15%;
+        height: fit-content;
+        margin-top: auto;
+        margin-bottom: auto;
+        display: flex;
+        justify-content: right;
+        margin-right: 1%;
     }
 
     .boxform{
@@ -91,42 +97,43 @@
 
     .rodape{
         background-color: rgb(80, 80, 80);
-        height: 100px;
+        height: auto;
         width: 100%;
-        margin-top: 100px;
+        margin-top: 5%;
         color: white;
         display: flex;
         font-family: 'Tahoma';
-        font-weight: 10;
+        font-weight: 400;
         padding-bottom: 5px;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .rodape .iconeFooter{
-        height: 100px;
-        width: 100px;
-        margin: 5px;
+        height: auto;
+        width: 15%;
+        margin: 0.7%;
         display: flex;
-        justify-content: center;
+        justify-content: left;
     }
 
     .rodape .copyright{
-        height: 100px;
-        width: 70%;
+        width: 65%;
         display: flex;
-        justify-content: right;
-        align-items:last baseline;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
         color: white;
         font-family: 'Tahoma';
         font-size: small;
     }
 
     .rodape .listaInfo{
-        height: 100px;
-        width: 800px;
-        margin-right: 0px;
-        margin-top: 5px;
+        height: auto;
+        width: 20%;
+        margin-right: 2%;
         display: flex;
-        justify-content: center;
+        justify-content: right;
         flex-direction: row;
     }
 
@@ -140,6 +147,7 @@
         width: fit-content;
         padding: 10px;
     }
+
 
     .sobreBtn:hover{
         color: rgb(80, 80, 80);
@@ -161,13 +169,13 @@
 <body>
     <header class="cabecalho">
         <div class="menu">
-            <img src="Imagens/menubar.png" alt="menubar.png">
+            <img src="Imagens/menubar.png" alt="menubar.png" height="35px">
         </div>
         <div class="logo">
-            <a href="home.html"><img src="Imagens/Logo.png" alt="logo.png" height="80px"></a>
+            <a href="home.html"><img src="Imagens/Logo.png" alt="logo.png" height="60px"></a>
         </div>
         <div class="usuario">
-           <img src="Imagens/Usuario.png" alt="Usuario.png">
+           <img src="Imagens/Usuario.png" alt="Usuario.png" height="40px">
         </div>
     </header>
 
@@ -205,7 +213,7 @@
 
    <footer class="rodape">
         <div class="iconeFooter">
-            <img src="Imagens/IconeBranco.png" alt="IconeBranco.png" height="60px">
+            <img src="Imagens/IconeBranco.png" alt="IconeBranco.png" height="50px">
         </div>
         <div class="copyright">
             <p>CloudEBook — 2023 © Todos os direitos reservados</p>
