@@ -1,5 +1,6 @@
 <?php
     class Cadastro {
+        
         public function __construct(){
             $nome = $_POST['nomeCad'];
             $sobrenome = $_POST['sobrenomeCad'];

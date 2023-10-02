@@ -1,6 +1,7 @@
 <?php
     class Login {
-        public function __construct(){
+
+        public function __construct(){         
             $email = $_POST['emailLogin'];
             $senha = $_POST['senhaLogin'];
     

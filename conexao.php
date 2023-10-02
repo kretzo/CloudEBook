@@ -1,6 +1,8 @@
 <?php
     class Conexao {
+
         private $conec;
+
         public function __construct() {
             $server = "localhost";
             $user = "root";
@@ -21,7 +23,7 @@
     
         public function close() {
             if ($this -> conec) {
-                mysqli_close($this->conec);
+                mysqli_close($this -> conec);
             }
         }
     }
