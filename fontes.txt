@@ -33,8 +33,13 @@ https://sharkcoder.com/blocks/carousel
 https://www.youtube.com/watch?v=QAD0K112tlQ
 
 ==============================================
-01-02/10:
+01/10:
 
 https://stackoverflow.com/questions/291813/recommended-way-to-embed-pdf-in-html
 https://www.youtube.com/watch?v=j2i0OXAlSKs
 https://www.youtube.com/watch?v=ae83c8Zpoxo&t=1724s
+
+==============================================
+02/10:
+
+https://stackoverflow.com/questions/3785754/how-to-store-a-pdf-file-in-mysql-database
