@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leitura</title>
+
+    <style>
+        .cabecalho{
+            background-color: rgb(55, 167, 182);
+            height: 80px;
+            width: 100%;
+            display: flex;
+            margin-bottom: 50px;
+        }
+    
+        .cabecalho .menu{
+            width: 15%;
+            height: fit-content;
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-left: 1%;
+            display: flex;
+            
+        }
+    
+        .cabecalho .logo{
+            width: 70%;
+            height: fit-content;
+            margin-top: auto;
+            margin-bottom: auto;
+            display: flex;
+            justify-content: center;
+            font-family: 'arial';
+        }
+    
+        .cabecalho .usuario{
+            width: 15%;
+            height: fit-content;
+            margin-top: auto;
+            margin-bottom: auto;
+            display: flex;
+            justify-content: right;
+            margin-right: 1%;
+        }
+    
+        .titulo{
+            height: 120px;
+            width: auto;
+            font-family: 'Tahoma';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .leitura{
+            width: 90%;
+            height: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    
+        .rodape{
+            background-color: rgb(80, 80, 80);
+            height: auto;
+            width: 100%;
+            margin-top: 5%;
+            color: white;
+            display: flex;
+            font-family: 'Tahoma';
+            font-weight: 400;
+            padding-bottom: 5px;
+            align-items: center;
+            justify-content: space-between;
+    }
+    
+        .rodape .iconeFooter{
+            height: auto;
+            width: 15%;
+            margin: 0.7%;
+            display: flex;
+            justify-content: left;
+        }
+    
+        .rodape .copyright{
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            color: white;
+            font-family: 'Tahoma';
+            font-size: small;
+        }
+    
+        .rodape .listaInfo{
+            height: auto;
+            width: 25%;
+            margin-right: 2%;
+            display: flex;
+            justify-content: right;
+            flex-direction: row;
+        }
+    
+        .sobreBtn{
+            background-color: rgb(80, 80, 80);
+            border: none;
+            color: white;
+            font-family: 'Tahoma';
+            font-size: medium;
+            height: fit-content;
+            width: fit-content;
+            padding: 10px;
+        }
+    
+    
+        .sobreBtn:hover{
+            color: rgb(80, 80, 80);
+            background-color: white;
+            cursor: pointer;
+        }
+        
+        a:link { text-decoration: none; }
+    
+        body{
+            margin: 0%;
+            background-color: rgb(236, 236, 236);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="menu">
+            <img src="Imagens/menubar.png" alt="menubar.png" height="35px">
+        </div>
+        <div class="logo">
+            <a href="home.html"><img src="Imagens/Logo.png" alt="logo.png" height="60px"></a>
+        </div>
+        <div class="usuario">
+           <img src="Imagens/Usuario.png" alt="Usuario.png" height="40px">
+        </div>
+    </header>
+
+    <embed class="leitura" src="Livros/nove_noites.pdf" type="application/pdf">
+
+    <footer class="rodape">
+        <div class="iconeFooter">
+            <img src="Imagens/IconeBranco.png" alt="IconeBranco.png" height="60px">
+        </div>
+        <div class="copyright">
+            <p>CloudEBook — 2023 © Todos os direitos reservados</p>
+        </div>
+        <div class="listaInfo">
+            <a href="sobre.html" class="sobreBtn">Nossa missão</a>
+            <a href="contato.html" class="sobreBtn">Contate-nos</a>
+            <a href="faq.html" class="sobreBtn">FAQ</a>
+        </div>
+    </footer>
+</body>
+</html>

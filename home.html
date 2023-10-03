@@ -46,6 +46,13 @@
         margin-right: 1%;
     }
 
+    .boasvindas{
+        display: flex;
+        justify-content: center;
+        font-family: 'Tahoma';
+        margin: 20px;
+    }
+
     .novidades {
         width: 65%;
         margin: 0 auto 20px;
@@ -90,11 +97,31 @@
         color: white;
     }
 
-    .boasvindas{
+    .containerLivros{
+        width: 65%;
+        margin-top: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .containerLivros .livros{
+        height: 160px;
+        width: 130px;
+        margin: 2%;
+        cursor: pointer;
+    }
+
+    .livros img{
+        height: 150px;
+        width: 120px;
+    }
+
+    .livros label{
         display: flex;
         justify-content: center;
-        font-family: 'Tahoma';
-        margin: 20px;
     }
 
     .rodape{
@@ -201,6 +228,21 @@
                 <div class="prev"></div>
                 <div class="next"></div>
             </div>
+        </div>
+    </div>
+
+    <div class="containerLivros">
+        <div class="livros" id="os_lusiadas" onclick="window.location='os_lusiadas.html';">
+            <img src="Imagens/Capas/capa_os_lusiadas.jpg" alt="os_lusiadas">
+            <label for="os_lusiadas">Os Lusíadas</label>
+        </div>
+        <div class="livros" id="nove_noites" onclick="window.location='nove_noites.html';">
+            <img src="Imagens/Capas/capa_nove_noites.jpg" alt="nove_noites">
+            <label for="nove_noites">Nove Noites</label>
+        </div>
+        <div class="livros" id="noite_na_taverna" onclick="window.location='noite_na_taverna.html';">
+            <img src="Imagens/Capas/capa_noite_na_taverna.jpg" alt="noite_na_taverna">
+            <label for="noite_na_taverna">Noite na Taverna</label>
         </div>
     </div>
 
