@@ -17,6 +17,7 @@
         }
 
         public function getConnection() {
+            echo "Ok.";
             return $this -> conec;
         }
     

@@ -37,9 +37,17 @@ https://www.youtube.com/watch?v=QAD0K112tlQ
 
 https://stackoverflow.com/questions/291813/recommended-way-to-embed-pdf-in-html
 https://www.youtube.com/watch?v=j2i0OXAlSKs
-https://www.youtube.com/watch?v=ae83c8Zpoxo&t=1724s
+https://www.youtube.com/watch?v=ae83c8Zpoxo
 
 ==============================================
 02/10:
 
 https://stackoverflow.com/questions/3785754/how-to-store-a-pdf-file-in-mysql-database
+
+==============================================
+05/10:
+
+https://www.w3schools.com/mysql/mysql_alter.asp
+https://dev.mysql.com/doc/refman/8.0/en/datetime.html
+https://stackoverflow.com/questions/5860198/uploading-pdf-files-to-mysql-server
+https://github.com/Nicoxdzin/phpPOO

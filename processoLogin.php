@@ -11,7 +11,7 @@
                 $conexao = new Conexao();
                 $conectar = $conexao->getConnection();
     
-                $verific = "SELECT IdUsuario FROM tb_usuario WHERE Email = '$email' AND Senha = '$senha'";
+                $verific = "SELECT IdUsuario FROM tb_usuarios WHERE Email = '$email' AND Senha = '$senha'";
                 $loginVerif = mysqli_query($conectar, $verific);
                 
                 $count = mysqli_num_rows($loginVerif);
