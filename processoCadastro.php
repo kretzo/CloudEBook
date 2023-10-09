@@ -15,7 +15,7 @@
                     $conexao = new Conexao();
                     $conectar = $conexao->getConnection();
     
-                    $str = "INSERT INTO tb_usuarios (Nome, Sobrenome, Email, Senha) VALUES ('$nome', '$sobrenome', '$email', '$senha')";
+                    $str = "INSERT INTO tb_usuario (Nome, Sobrenome, Email, Senha) VALUES ('$nome', '$sobrenome', '$email', '$senha')";
                     $inserir = mysqli_query($conectar, $str);
     
                     if($inserir){

@@ -5,51 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CloudEBook - A sua biblioteca digital</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </head>
 
 <style>
     .cabecalho{
-        background-color: rgb(55, 167, 182);
-        height: 80px;
-        width: 100%;
+        background-color: #2576A8;
+        box-shadow: 0px 1px 5px;
+        height: 50px;
+        width: auto;
         display: flex;
         margin-bottom: 50px;
-    }
-
-    .cabecalho .menu{
-        width: 15%;
-        height: fit-content;
-        margin-top: auto;
-        margin-bottom: auto;
-        margin-left: 1%;
-        display: flex;
         
     }
 
-    .cabecalho .logo{
-        width: 70%;
+    .cabecalho .menu{
+        width: 40px;
+        height: 40px;
+        margin: 0px;
+        display: inline-flex;
+        margin: 20px;
+        
+    }
+    
+    @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@700&display=swap');
+    *{
+        font-family: 'Martian Mono', monospace;
+    }
+
+    .cor{
+        background-color: #2576A8 !important;
+        border: none;
         height: fit-content;
-        margin-top: auto;
-        margin-bottom: auto;
+    }
+
+    .cabecalho .logo{
+        width: 3000px;
         display: flex;
         justify-content: center;
         font-family: 'arial';
     }
 
     .cabecalho .usuario{
-        width: 15%;
-        height: fit-content;
-        margin-top: auto;
-        margin-bottom: auto;
-        display: flex;
-        justify-content: right;
-        margin-right: 1%;
+        width: 50px;
+        height: 50px;
+        display: inline-flex;
+        justify-content: center;
+        margin: 15px;
     }
 
     .boasvindas{
         display: flex;
         justify-content: center;
-        font-family: 'Tahoma';
+        font-family: 'Stencil';
         margin: 20px;
     }
 
@@ -125,7 +134,7 @@
     }
 
     .rodape{
-        background-color: rgb(80, 80, 80);
+        background-color: #dfedf2;
         height: auto;
         width: 100%;
         margin-top: 5%;
@@ -165,56 +174,68 @@
         justify-content: right;
         flex-direction: row;
     }
-
-    .sobreBtn{
-        background-color: rgb(80, 80, 80);
-        border: none;
-        color: white;
-        font-family: 'Tahoma';
-        font-size: medium;
-        height: fit-content;
-        width: fit-content;
-        padding: 10px;
-    }
-
-
-    .sobreBtn:hover{
-        color: rgb(80, 80, 80);
-        background-color: white;
-        cursor: pointer;
-    }
+    .sobreBtn {
+    background-color:#dfedf2;
+    border: none;
+    color: black;
+    font-family: 'Tahoma';
+    font-size: medium;
+    height: fit-content;
+    width: fit-content;
+    padding: 10px;
+   }
 
     a:link { text-decoration: none; }
 
     .sobreBtn:hover{
-        color: rgb(80, 80, 80);
-        background-color: white;
         cursor: pointer;
     }
 
     body{
         margin: 0%;
+        background-color: #dfedf2;
         min-height: 100vh;
         display: flex;
         flex-direction: column;
     }
+    .logo{
+        display: flex;
+        align-items: center;
+        width: 400px;
+        height: 80px;
+    }
+    #logo{
+        width: 200px;
+        height: 200px;
+    }
+    
 </style>
 
-<body>
+<body >
     <header class="cabecalho">
-        <div class="menu">
-            <img src="Imagens/menubar.png" alt="menubar.png" height="35px">
-        </div>
+        <div class="dropdown">
+            <button class="cor" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="Imagens/rede-na-nuvem-unscreen.gif" alt="" width="50" height="48">
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="sobre.html">👤 SOBRE</a></li>
+            </ul>
+          </div>
         <div class="logo">
-            <a href="home.html"><img src="Imagens/Logo.png" alt="logo.png" height="60px"></a>
+            <a href="home.html"><img src="Imagens/cbc40fce71f045f6b812383fe5fe1742-removebg-preview.png" alt="" id="logo" height="120px"></a>
         </div>
-        <div class="usuario">
-           <img src="Imagens/Usuario.png" alt="Usuario.png" height="40px">
-        </div>
+        <div class="dropdown">
+            <button class="cor" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="Imagens/procurar-unscreen.gif" alt="" width="50" height="48">
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="faq.html">🗣 SUPORTE</a></li>
+            </ul>
+          </div>
     </header>
 
     <div class="boasvindas">
-        <h2>Bem-vindo(a) ao CloudEBook!</h2>
+        <h2>Bem-vindo(a) ao Cloud&Book!</h2>
     </div>
 
     <div class="novidades">
@@ -247,9 +268,9 @@
 
     <footer class="rodape">
         <div class="iconeFooter">
-            <img src="Imagens/IconeBranco.png" alt="IconeBranco.png" height="60px">
+            <img src="Imagens/livro-1--unscreen.gif" alt="" height="50px">
         </div>
-        <div class="copyright">
+        <div class="copyright"  style="color: rgb(18, 17, 17)">
             <p>CloudEBook — 2023 © Todos os direitos reservados</p>
         </div>
         <div class="listaInfo">
