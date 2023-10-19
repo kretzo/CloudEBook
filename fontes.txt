@@ -30,13 +30,16 @@ https://www.tutorialspoint.com/php/php_mysql_login.htm
 ==============================================
 19/09:
 https://sharkcoder.com/blocks/carousel
+
 https://www.youtube.com/watch?v=QAD0K112tlQ
 
 ==============================================
 01/10:
 
 https://stackoverflow.com/questions/291813/recommended-way-to-embed-pdf-in-html
+
 https://www.youtube.com/watch?v=j2i0OXAlSKs
+
 https://www.youtube.com/watch?v=ae83c8Zpoxo
 
 ==============================================
@@ -48,6 +51,14 @@ https://stackoverflow.com/questions/3785754/how-to-store-a-pdf-file-in-mysql-dat
 05/10:
 
 https://www.w3schools.com/mysql/mysql_alter.asp
+
 https://dev.mysql.com/doc/refman/8.0/en/datetime.html
+
 https://stackoverflow.com/questions/5860198/uploading-pdf-files-to-mysql-server
+
 https://github.com/Nicoxdzin/phpPOO
+
+==============================================
+19/10:
+
+https://www.etutorialspoint.com/index.php/186-how-to-display-pdf-file-in-web-page-from-database-using-php
