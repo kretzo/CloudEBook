@@ -1,5 +1,5 @@
 <?php
-    class ConexaoLeitura{
+    class ConexaoLivros{
 
         private $conec;
 
@@ -12,7 +12,7 @@
             $this -> conec = mysqli_connect($server, $user, $password, $database);
 
             if(!$this -> conec){
-                die("Falha de conexão");
+                die("Falha de conexão: Classe ConexaoLivros");
             }
         }
 
@@ -26,6 +26,29 @@
             }
         }
     }
+
+    function Livro() {
+        $conexao = new ConexaoLivros();
+        $conectar = $conexao->getConnection();
+
+        $str = "SELECT Path FROM tb_livros WHERE IdLivro = 1;";
+        $result = mysqli_query($conectar, $str);
+
+        if(!$result){
+            die("Falha de Conexão: Função Livros()");
+        }
+
+        if ($row = mysqli_fetch_assoc($result)) {
+            $path = $row['Path'];
+        }
+
+        $conexao->close();
+    
+        return $path;
+    }
+
+    $path = Livro();
+
 ?>
 
 <!DOCTYPE html>
@@ -34,7 +57,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Leitura</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </head>
 
 <style>
@@ -96,6 +121,11 @@
         font-family: 'Tahoma';
         display: flex;
         flex-direction: column;
+    }
+
+    embed{
+        width: auto;
+        height: 1000px;
     }
 
     .rodape{
@@ -207,7 +237,7 @@
           </div>
     </header>
 
-    <embed src="<php? echo $path.$pdf?>" type="application/pdf">
+        <embed class="pdfStyle" src="<?php echo $path; ?>" type="application/pdf">
 
     <footer class="rodape">
         <div class="iconeFooter">
