@@ -31,7 +31,9 @@
         $conexao = new ConexaoLivros();
         $conectar = $conexao->getConnection();
 
-        $str = "SELECT Path FROM tb_livros WHERE IdLivro = 1;";
+        $idLivro = 1;
+
+        $str = "SELECT Path FROM tb_livros WHERE IdLivro = {$idLivro};";
         $result = mysqli_query($conectar, $str);
 
         if(!$result){
