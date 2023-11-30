@@ -15,8 +15,8 @@
                     $conexao = new Conexao();
                     $conectar = $conexao->getConnection();
     
-                    $str = "INSERT INTO tb_usuario (Nome, Sobrenome, Email, Senha) VALUES ('$nome', '$sobrenome', '$email', '$senha')";
-                    $inserir = mysqli_query($conectar, $str);
+                    $sql = "INSERT INTO tb_usuarios (Nome, Sobrenome, Email, Senha) VALUES ('$nome', '$sobrenome', '$email', '$senha')";
+                    $inserir = mysqli_query($conectar, $sql);
     
                     if($inserir){
                         header("Location: login.html");

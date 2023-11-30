@@ -88,7 +88,7 @@
           </div>
     </header>
 
-        <embed class="pdfStyle" src="<?php echo $path; ?>" type="application/pdf">
+    <embed class="pdfStyle" src="<?php echo $path; ?>" type="application/pdf">
 
     <footer class="rodape">
         <div class="iconeFooter">

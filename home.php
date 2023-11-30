@@ -1,3 +1,9 @@
+<?php
+    if(!isset($_SESSION)) {
+        session_start();
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -21,21 +27,34 @@
             </ul>
           </div>
         <div class="logo">
-            <a href="home.html"><img src="Imagens/cbc40fce71f045f6b812383fe5fe1742-removebg-preview.png" alt="" id="logo" height="120px"></a>
+            <a href="home.php"><img src="Imagens/cbc40fce71f045f6b812383fe5fe1742-removebg-preview.png" alt="" id="logo" height="120px"></a>
         </div>
         <div class="dropdown">
             <button class="cor" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <img src="Imagens/procurar-unscreen.gif" alt="" width="50" height="48">
             </button>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="faq.html">🗣 SUPORTE</a></li>
+              <?php if(isset($_SESSION['Nome'])): ?>
+                <li><a class="dropdown-item" href="minhaconta.php">👤 MINHA CONTA</a></li>
+                <li><a class="dropdown-item" href="#">📚 BIBLIOTECA</a></li>
+                <li><a class="dropdown-item" href="#">⭐ FAVORITOS</a></li>
+                <li><a class="dropdown-item"  id="logoutLink" href="logout.php">↩️ SAIR</a></li>
+              <?php else: ?>
+                <li><a class="dropdown-item" href="login.html">↪️ FAZER LOGIN</a></li>
+              <?php endif; ?>
             </ul>
           </div>
     </header>
 
-    <div class="boasvindas">
-        <h2>Bem-vindo(a) ao Cloud&Book!</h2>
-    </div>
+    <?php if(isset($_SESSION['Nome'])): ?>
+        <div class="boasvindas">
+            <h2>Bem-vindo(a) ao Cloud&Book, <?php echo $_SESSION['Nome']; ?>!</h2>
+        </div>
+    <?php else: ?>
+        <div class="boasvindas">
+            <h2>Bem-vindo ao CloudEBook!</h2>
+        </div>
+    <?php endif; ?>
 
     <div class="novidades">
         <div class="slideImagens">
@@ -51,19 +70,19 @@
     </div>
 
     <div class="containerLivros">
-        <div class="livros" id="7" onclick="window.location='leitura.php';">
+        <div class="livros" id="7" onclick="window.location='leitura.php?id=7';">
             <img src="Imagens/Capas/capa_os_lusiadas.jpg" alt="os_lusiadas">
             <label for="7">Os Lusíadas</label>
         </div>
-        <div class="livros" id="5" onclick="window.location='leitura.php';">
+        <div class="livros" id="5" onclick="window.location='leitura.php?id=5';">
             <img src="Imagens/Capas/capa_nove_noites.jpg" alt="nove_noites">
             <label for="5">Nove Noites</label>
         </div>
-        <div class="livros" id="4" onclick="window.location='leitura.php';">
+        <div class="livros" id="4" onclick="window.location='leitura.php?id=4';">
             <img src="Imagens/Capas/capa_noite_na_taverna.jpg" alt="noite_na_taverna">
             <label for="4">Noite na Taverna</label>
         </div>
-        <div class="livros" id="1" onclick="window.location='leitura.php';">
+        <div class="livros" id="1" onclick="window.location='leitura.php?id=1';">
             <img src="Imagens/Capas/capa_a_falencia.jpg" alt="noite_na_taverna">
             <label for="1">A Falência</label>
         </div>
@@ -139,6 +158,13 @@
             setInterval(next, rate);
         }
     }
+
+    document.getElementById('logoutLink').addEventListener('click', function(e){
+    e.preventDefault();
+    if (confirm("Tem certeza que deseja sair?")){
+        window.location.href = 'logout.php';
+    }
+    });
 </script>
 
 </html>
