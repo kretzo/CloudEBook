@@ -19,7 +19,7 @@
                     $inserir = mysqli_query($conectar, $sql);
     
                     if($inserir){
-                        header("Location: login.html");
+                        header("Location: login.php");
                         exit();
                     } 
                     else{
